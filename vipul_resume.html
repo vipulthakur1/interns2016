@@ -1,0 +1,159 @@
+<html>
+<head>
+
+       <style type="text/css">
+	.show-btn{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+}
+
+     table, th, td {
+    
+      border-style:groove;
+      border-width:15px;
+      border-color:#FAFAD2;
+	}
+
+    #header{
+      background-color:black;
+      color:white;
+      text-align:left;
+      padding:5px;
+       }
+	</style>
+</head>
+<body style="margin-top:2em;">
+<h2 id="header"><font size="5" font-family="Times New Roman" color="white"><center>CURRICULUM VITAE</center></font></h2><br>
+	<h3>
+		Name: ABC XYZ
+	</h3>
+	<input type="button" class="show-btn" id="show-qual" value="Show Qualifications details" onclick="show_qual()"></button>
+        <input type="button" class="show-btn" id="show-tech" value="Show Technical Skills" onclick="show_tech()">
+        <input type="button" class="show-btn" id="show-hobb" value="Show Hobbies" onclick="show_hobb()">
+	<input type="button" class="show-btn" id="show-proj" value="Show Project details" onclick="show_proj()">
+
+	<!-- List Qualifications/Projects in an innovative way -->
+	<div id="qual-div" style="display:none">
+		<h3 style="color: #A9A9A9;"><u>Academic Qualifications</u></h3><br/>
+
+
+                 <table style="width:75%">
+                 <tr>
+                  <td><b><u>Course</b></u></td>
+                  <td><b><u>Percentage</b></u></td>		
+                  <td><b><u>University</b></u></td>
+                  <td><b><u>Year</b></u></td>
+                  </tr>
+                
+                  <tr>
+                  <td>SSC</td>
+                  <td>0.0%</td>		
+                  <td>Maharashtra Board</td>
+                  <td>2004</td>
+                  </tr>
+
+                  <tr>
+                  <td>HSC</td>
+                  <td>0.0%</td>		
+                  <td>Maharashtra Board</td>
+                  <td>2006</td>
+                  </tr>
+
+
+                  <tr>
+                  <td>Bsc(IT)</td>
+                  <td>0.0%</td>		
+                  <td>Mumbai</td>
+                  <td>2009</td>
+                  </tr>
+
+                  <tr>
+                  <td>MCA</td>
+                  <td>0.0%</td>		
+                  <td>University</td>
+                  <td>2012</td>
+                  </tr>
+                   </table>
+                
+                	
+	</div>
+
+         <div id="tech-div" style="display:none">
+         <h3 style="color: #A9A9A9;"><u>Technical Skills</u></h3><br/>
+
+
+         <table style="width:75%">
+                  <tr>
+                  <td><b><u>Programming Languages</b></u></td>
+                  <td>C&nbsp,&nbspC++&nbsp,&nbspJava&nbsp,&nbspVB&nbsp,C#&nbsp,&nbspDot Net</td>		
+                  </tr>
+  
+                   <tr>
+                  <td><b><u>Web Development</b></u></td>
+                  <td>Html&nbsp,&nbspcss&nbsp,&nbspJQuery</td>		
+                  </tr>
+
+                   <tr>
+                  <td><b><u>Database</b></u></td>
+                  <td>Ms Access&nbsp,&nbspSql server2000&nbsp,&nbspMysql&nbsp,&nbspOracle</td>		
+                  </tr>
+         </table>
+         </div>
+
+        <div id="hobb-div" style="display:none">
+		<h4>My Hobbies</h4>
+                 
+    			
+	</div>
+
+	<div id="proj-div" style="display:none">
+		<h4>My Projects</h4>
+	</div>
+
+	<script>
+         function show_qual()
+          {
+         document.getElementById("qual-div").style.display="block";
+         document.getElementById("tech-div").style.display="none";
+         document.getElementById("hobb-div").style.display="none";
+         document.getElementById("proj-div").style.display="none";
+          }
+  
+           function show_tech()
+          {
+         document.getElementById("qual-div").style.display="none";
+         document.getElementById("tech-div").style.display="block";
+         document.getElementById("hobb-div").style.display="none";
+         document.getElementById("proj-div").style.display="none";
+          }
+
+          function show_hobb()
+          {
+         document.getElementById("qual-div").style.display="none";
+         document.getElementById("tech-div").style.display="none";
+         document.getElementById("hobb-div").style.display="block";
+         document.getElementById("proj-div").style.display="none";
+          }
+
+           function show_proj()
+          {
+         document.getElementById("qual-div").style.display="none";
+         document.getElementById("tech-div").style.display="none";
+         document.getElementById("hobb-div").style.display="none";
+         document.getElementById("proj-div").style.display="block";
+          }
+
+	</script>
+
+
+</body>
+</html>
